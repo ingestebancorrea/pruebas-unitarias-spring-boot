@@ -154,6 +154,6 @@ public class EmpleadoServiceTests {
         empleadoService.deleteEmpleado(empleadoId);
 
         //then
-        verify(empleadoRepository,times(1)).deleteById(empleadoId);
+        verify(empleadoRepository,times(1)).deleteById(empleadoId);// times para que sea llamado una sola vez
     }
 }
